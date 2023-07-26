@@ -19,7 +19,9 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#F85559',
-                        'timer-color': 'rgba(18, 18, 18, 0.60);'
+                        'timer-color': 'rgba(18, 18, 18, 0.60);',
+                        'dollar-color': '#121212',
+                        'border-col': 'rgba(18, 18, 18, 0.10)',
                         // 'banner-1': "images/banner1.png",
                         // 'banner-2': "",
                         // 'banner-3': "",
@@ -34,6 +36,11 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .border-style {
+            border-radius: 8px;
+            border: 1px solid rgba(18, 18, 18, 0.10);
+        }
     </style>
 </head>
 
@@ -43,7 +50,7 @@
         <nav class="max-w-screen-xl mx-auto ">
             <div class="navbar bg-primary-color rounded-full pr-4">
                 <div class="navbar-start hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-white font-bold">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -54,7 +61,7 @@
                 <div class="navbar-center">
                     <div class="flex items-center">
                         <img class="w-6 h-6 mr-0" src="images/logo.png" alt="">
-                        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                        <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
                     </div>
                     <div class="dropdown ">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -65,7 +72,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white font-bold">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -112,7 +119,8 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="bg-[url('images/banner2.png')] w-full flex flex-col items-center justify-center">
+                    <div
+                        class="bg-[url('images/banner2.png')] w-full flex flex-col items-center justify-center py-20 px-30">
                         <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
                         <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
                         <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
@@ -123,7 +131,8 @@
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="bg-[url('images/banner3.png')] w-full flex flex-col items-center justify-center">
+                    <div
+                        class="bg-[url('images/banner3.png')] w-full flex flex-col items-center justify-center py-20 px-30">
                         <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
                         <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
                         <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
@@ -134,7 +143,8 @@
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div class="bg-[url('images/banner4.png')] w-full flex flex-col items-center justify-center">
+                    <div
+                        class="bg-[url('images/banner4.png')] w-full flex flex-col items-center justify-center py-20 px-30">
                         <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
                         <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
                         <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
@@ -162,7 +172,7 @@
             <div class="flex justify-between">
                 <div>
                     <h2 class="font-black text-4xl mb-3">Deal of the day</h2>
-                    <p class="text-xs">
+                    <p class="text-xs text-timer-color">
                         Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                         Latin literature from 45 BC, making it over 2000 years old.
                     </p>
@@ -214,6 +224,221 @@
                 </div>
             </div>
         </section>
+
+        <!-- deal - card section -->
+        <section class="max-w-screen-xl mx-auto ">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="card border-[1px] border-border-color  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p class="text-dollar-color font-bold">12.90$ - 18.85$</p>
+                        <p class="text-xs text-timer-color font-normal">Apples</p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="24" viewBox="0 0 160 24"
+                                fill="none">
+                                <path
+                                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                    fill="#FBC0A8" />
+                            </svg>
+                        </div>
+                        <button class="text-primary-color text-sm font-bold mt-3">Details</button>
+                    </div>
+                </div>
+
+                <div class="card border-[1px] border-border-color  bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p class="text-dollar-color font-bold">12.90$ - 18.85$</p>
+                        <p class="text-xs text-timer-color font-normal">Orange</p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="24" viewBox="0 0 160 24"
+                                fill="none">
+                                <path
+                                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                    fill="#FBC0A8" />
+                            </svg>
+                        </div>
+                        <button class="text-primary-color text-sm font-bold mt-3">Details</button>
+                    </div>
+                </div>
+
+                <div class="card border-[1px] border-border-color  bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p class="text-dollar-color font-bold">12.90$ - 18.85$</p>
+                        <p class="text-xs text-timer-color font-normal">Red Dragon</p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="24" viewBox="0 0 160 24"
+                                fill="none">
+                                <path
+                                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                    fill="#FBC0A8" />
+                            </svg>
+                        </div>
+                        <button class="text-primary-color text-sm font-bold mt-3">Details</button>
+                    </div>
+                </div>
+
+                <div class="card border-[1px] border-border-color  bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p class="text-dollar-color font-bold">12.90$ - 18.85$</p>
+                        <p class="text-xs text-timer-color font-normal">Banana</p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="24" viewBox="0 0 160 24"
+                                fill="none">
+                                <path
+                                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                                    fill="#F85559" />
+                                <path
+                                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                                    fill="#FBC0A8" />
+                                <path
+                                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                                    fill="#FBC0A8" />
+                            </svg>
+                        </div>
+                        <button class="text-primary-color text-sm font-bold mt-3">Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-8 mb-[8rem]">
+            <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop All</button>
+        </div>
+
+        <!-- team section  -->
+
+        <div class="max-w-screen-xl mx-auto">
+            <div class="bg-[url('images/team.png')] w-full flex flex-col items-center justify-center py-20 px-30">
+                <h1>Meet the team section</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin
+                    literature from 45 BC, making it over 2000 years old.
+                </p>
+                <!-- member grid  -->
+                <div class="flex gap-4">
+                    <!-- each member  -->
+                    <div class="card shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- each member  -->
+                    <div class="card shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="/images/member2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- each member  -->
+                    <div class="card shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="/images/member3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- each member  -->
+                    <div class="card shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="/images/member4.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
