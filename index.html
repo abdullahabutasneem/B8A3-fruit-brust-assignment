@@ -19,6 +19,10 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#F85559',
+                        // 'banner-1': "images/banner1.png",
+                        // 'banner-2': "",
+                        // 'banner-3': "",
+                        // 'banner-4': "",
                     }
                 }
             }
@@ -29,10 +33,12 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .overlay {
+            background-image: linear-gradient(to bottom, black);
+        }
     </style>
 </head>
-
-
 
 <body class="font-lato">
     <header>
@@ -92,6 +98,57 @@
                 </div>
             </div>
         </nav>
+
+        <!-- banner section  -->
+        <div class="max-w-screen-xl mx-auto my-7">
+            <div class="carousel">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div
+                        class="bg-[url('images/banner1.png')] w-full flex flex-col items-center justify-center py-20 px-30">
+                        <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
+                        <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="bg-[url('images/banner2.png')] w-full flex flex-col items-center justify-center">
+                        <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
+                        <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="bg-[url('images/banner3.png')] w-full flex flex-col items-center justify-center">
+                        <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
+                        <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="bg-[url('images/banner4.png')] w-full flex flex-col items-center justify-center">
+                        <h1 class="text-white  text-7xl font-bold text-center">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-xs text-white font-light mt-9 mb-9">We supply highly quality organic products</p>
+                        <button class="bg-primary-color text-white font-bold px-3 py-2 rounded">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
